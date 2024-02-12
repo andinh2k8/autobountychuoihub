@@ -10,7 +10,7 @@ spawn(function()
     end
 end)
 getgenv().Setting = {
-    ["Team"] = "Marines", --Marines,Pirates
+    ["Team"] = "Pirates", --Marines,Pirates
     ["Webhook"] = {
         ["Enabled"] = true,
         ["Url Webhook"] = "https://discord.com/api/webhooks/1151047514624098304/HV-9iI3lKp4OJ9o8usfHTjP8gkWRMR6K39eQMQiGQzsG0y6O6NU7WoDtuVD5vY6pqkvC", --Your Url
