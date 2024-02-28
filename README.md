@@ -29,7 +29,7 @@ getgenv().Setting = {
         ["Enable"] = true,
         ["LowHealth"] = 4500,
         ["MaxHealth"] = 5000,
-        ["Teleport Y"] = 2000
+        ["Teleport Y"] = 5000
     },
     ["Race V4"] = {
         ["Enable"] = true,
