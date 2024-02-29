@@ -1,6 +1,7 @@
 repeat wait()
 until game:IsLoaded()
-local TableChat = {"Don't cry baby"}
+wait()
+local TableChat = {"Long handsome","Config By #chi biet khoc"}
 spawn(function()
     while wait() do 
         pcall(function()
@@ -29,7 +30,7 @@ getgenv().Setting = {
         ["Enable"] = true,
         ["LowHealth"] = 4500,
         ["MaxHealth"] = 5000,
-        ["Teleport Y"] = 5000
+        ["Teleport Y"] = 2000
     },
     ["Race V4"] = {
         ["Enable"] = true,
@@ -67,17 +68,17 @@ getgenv().Setting = {
                     ["HoldTime"] = 0,
                 },
                 ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 1.5,
                 },
 
                 ["C"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 1.5,
                 },
                 ["V"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0.3,
                 },
                 ["F"] = {
                     ["Enable"] = false,
@@ -86,7 +87,7 @@ getgenv().Setting = {
             },
         },
         ["Gun"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
@@ -116,4 +117,13 @@ getgenv().Setting = {
     }
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BountyShit.lua"))()
+spawn(function()
+    while wait() do
+            game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
+                if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
+                    game:GetService("TeleportService"):Teleport(game.PlaceId)
+                end
+            end)
+        end
+    end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BountyShit.lua"))() 
