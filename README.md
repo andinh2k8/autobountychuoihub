@@ -18,7 +18,7 @@ getgenv().Setting = {
     },
     ["Misc"] = {
         ["AutoBuyRandomandStoreFruit"] = true,
-        ["AutoBuySurprise"] = true,
+        ["AutoBuySurprise"] = false,
     },
     ["Click"] = {
         ["Enable"] = true,
